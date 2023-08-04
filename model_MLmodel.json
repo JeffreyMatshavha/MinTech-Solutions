@@ -1,0 +1,30 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.6
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.1.1
+mlflow_version: 2.5.0
+model_uuid: 0a9fd01caaeb4b948511dbc8a2fc3215
+run_id: f6927cc6734a40b3ad8461c58a433722
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  type: dataframe
+signature:
+  inputs: '[{"type": "datetime", "name": "Time"}, {"type": "double", "name": "Conveyor
+    Belt Speed (m/min)"}, {"type": "double", "name": "Conveyor Belt Tension (N)"},
+    {"type": "double", "name": "Ambient Temperature (\u00b0C)"}, {"type": "double",
+    "name": "Vibration (mm/s^2)"}, {"type": "double", "name": "Belt Alignment (mm)"},
+    {"type": "string", "name": "Belt Drift"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "object", "shape": [-1]}}]'
+utc_time_created: '2023-08-04 06:57:58.492741'
